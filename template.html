@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+</head>
+<body>
+
+    <header> 
+
+         <a href="javascript:history.go(-1)" class="back"> Back </a>
+        <ul>
+            <li class="NavBarListItem">
+                <a href="index.html"> Home </a>
+            </li>
+        </ul>
+    </header>
+
+    
+    <h2>Create a Card: </h2>
+    <br><br>
+    <div>
+
+
+        <div class="form_select">
+            <img src="" id="back_img"> 
+            <canvas id="form_canvas"> 
+                
+            </canvas> 
+        </div>
+        <div class="form_select">  
+            <input id="nameinp" placeholder="please type your name" oninput="update_canvas()" maxlength="50">
+        </div>
+
+        <a id="dl" download="Canvas.png" href="#">Download</a>
+        
+        <br><br>
+
+    </div>
+    <script src="data/categories.js"></script>
+    <script src="prefabs.js"></script>
+    <script src="script/card_creator.js"></script>
+
+</body>
+</html>
