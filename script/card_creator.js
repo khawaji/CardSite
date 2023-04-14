@@ -1,6 +1,6 @@
 var current_lang = "english"
 const queryString = window.location.search.split("?")[1];
-const category = queryString.split("&")[0].split("=")[1];
+const category = queryString.split("&")[0].split("=")[1].replace(/%20/g, " ");
 const name = queryString.split("&")[1].split("=")[1].replace(/%20/g, " ");
 const back_img = document.getElementById("back_img");
 const name_inp = document.getElementById("nameinp");
