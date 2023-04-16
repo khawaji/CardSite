@@ -1,1 +1,1 @@
-const categories = {"Eid Cards": {"1098.png": {"name": {"x": 532, "y": 876}, "color": "#ffffff"}, "120.png": {"name": {"x": 515, "y": 851}, "color": "#fdeca6"}, "130.png": {"name": {"x": 382, "y": 818}, "color": "#56047c"}}}
+const categories = {"Eid Cards": {"1098.png": {"name": {"x": 532, "y": 876}, "color": "#ffffff"}, "120.png": {"name": {"x": 515, "y": 851}, "color": "#fdeca6"}, "130.png": {"name": {"x": 382, "y": 818}, "color": "#56047c"}, "1445.png": {"name": {"x": 1507, "y": 832}, "color": "#a0abc3"}}}

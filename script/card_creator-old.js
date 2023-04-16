@@ -22,7 +22,7 @@ function update_canvas() {
     ctx.textAlign ="center"
     ctx.fillStyle = categories[category][name]["color"]
     ctx.textBaseline = 'middle';   
-    ctx.font = canvas.width/14 + "px adobe-arabic";
+    ctx.font = "50px adobe-arabic";
     //ctx.font = "50px sans";
     
     ctx.fillText(name_inp.value,covert_cord(categories[category][name]["name"]["x"]), covert_cord(categories[category][name]["name"]["y"]));
@@ -31,9 +31,9 @@ function update_canvas() {
 function dlCanvas() {
     var dt = canvas.toDataURL('image/png');
     dt = dt.replace(/^data:image\/[^;]*/, 'data:application/octet-stream');
-	
+
     dt = dt.replace(/^data:application\/octet-stream/, 'data:application/octet-stream;headers=Content-Disposition%3A%20attachment%3B%20filename='+name.split(".")[0]+'.png');
-	this.download = name.split(".")[0]+'.png';
+  
     this.href = dt;
   };
 document.getElementById("dl").addEventListener('click', dlCanvas, false);
